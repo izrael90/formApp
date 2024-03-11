@@ -36,8 +36,15 @@ export class BasicPageComponent implements OnInit {
     }
     const errors = this.myForm.controls[field].errors || {};
     for (const key of Object.keys(errors)) {
-      if (errors[key]) {
-        console.log(key);
+      switch (key) {
+        case 'required':
+          return 'El campo es requerido';
+        case 'minlength':
+          return `El minimo es de  ${errors[key].requiredLength} caracteres`;
+        case 'min':
+          return `El minimo valor es ${errors[key].min}`;
+        default:
+          break;
       }
     }
     return '';
