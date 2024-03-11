@@ -6,6 +6,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-basic-page',
@@ -23,9 +24,23 @@ export class BasicPageComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
   ngOnInit(): void {}
 
-  isValidField(field: string): boolean {
-    const f = this.myForm.get(field);
-    return f?.touched && f?.invalid ? false : true;
+  isValidField(field: string): boolean | null {
+    return (
+      this.myForm.controls[field].errors && this.myForm.controls[field].touched
+    );
+  }
+
+  getFieldError(field: string): string | null {
+    if (!this.myForm.controls[field]) {
+      return '';
+    }
+    const errors = this.myForm.controls[field].errors || {};
+    for (const key of Object.keys(errors)) {
+      if (errors[key]) {
+        console.log(key);
+      }
+    }
+    return '';
   }
 
   onSave(): void {

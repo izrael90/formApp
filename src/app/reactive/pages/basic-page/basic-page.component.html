@@ -24,7 +24,9 @@
               formControlName="name"
               placeholder="Nombre del producto"
             />
-            <span class="form-text text-danger"> Este campo es requerido </span>
+            <span *ngIf="isValidField('name')" class="form-text text-danger">
+              {{ getFieldError("name") }}
+            </span>
           </div>
         </div>
         <!-- Campo de precio -->
