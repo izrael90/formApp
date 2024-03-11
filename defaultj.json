@@ -1,0 +1,117 @@
+{
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "color-highlight.languages": ["*"],
+  "dart.flutterSdkPath": "/Users/imh/development/flutter",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "expand",
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.largeFileOptimizations": false,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.vertical": "auto",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.shell.osx": "/usr/local/bin/hyper",
+  "activitusbar.views": [
+    {
+      "name": "explorer",
+      "codicon": "explorer-view-icon"
+    },
+    {
+      "name": "search",
+      "codicon": "search-view-icon"
+    },
+    {
+      "name": "scm",
+      "codicon": "source-control-view-icon"
+    },
+    {
+      "name": "debug",
+      "codicon": "run-view-icon"
+    },
+    {
+      "name": "extensions",
+      "codicon": "extensions-view-icon"
+    }
+  ],
+  "workbench.colorTheme": "Aura Soft Dark",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#121016",
+    "statusBar.debuggingBackground": "#121016",
+    "statusBar.debuggingForeground": "#525156",
+    "debugToolBar.background": "#121016"
+  },
+  "[dart]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "console-ninja.featureSet": "Community",
+  "gitlab.customQueries": [
+    {
+      "name": "Issues assigned to me",
+      "type": "issues",
+      "scope": "assigned_to_me",
+      "state": "opened",
+      "noItemText": "There is no issue assigned to you."
+    },
+    {
+      "name": "Issues created by me",
+      "type": "issues",
+      "scope": "created_by_me",
+      "state": "opened",
+      "noItemText": "There is no issue created by you."
+    },
+    {
+      "name": "Merge requests assigned to me",
+      "type": "merge_requests",
+      "scope": "assigned_to_me",
+      "state": "opened",
+      "noItemText": "There is no MR assigned to you."
+    },
+    {
+      "name": "Merge requests I'm reviewing",
+      "type": "merge_requests",
+      "reviewer": "<current_user>",
+      "state": "opened",
+      "noItemText": "There is no MR for you to review."
+    },
+    {
+      "name": "Merge requests created by me",
+      "type": "merge_requests",
+      "scope": "created_by_me",
+      "state": "opened",
+      "noItemText": "There is no MR created by you."
+    },
+    {
+      "name": "All project merge requests",
+      "type": "merge_requests",
+      "scope": "all",
+      "state": "opened",
+      "noItemText": "The project has no merge requests"
+    }
+  ],
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "workbench.activityBar.location": "hidden",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
