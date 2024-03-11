@@ -1,0 +1,87 @@
+<div class="flex justify-center bg-blue-300 p-1 shadow">
+  <h2 class="mb-4 text-xl font-semibold">Reactivos: Básicos</h2>
+  <span class="text-gray-500"
+    >Formulario básico con validaciones reactivas</span
+  >
+</div>
+
+<div class="flex-col bg-red-500 md:flex-row md:space-x-4">
+  <div class="flex justify-center">
+    <h2 class="mb-4 text-xl font-semibold">Reactivos: Básicos</h2>
+    <span class="text-gray-500"
+      >Formulario básico con validaciones reactivas</span
+    >
+  </div>
+  <div class="flex flex-col bg-yellow-300 md:w-1/2">
+    <form autocomplete="off">
+      <!-- Campo de producto -->
+      <div class="mb-3 flex flex-col md:flex-row">
+        <label class="md:w-1/3">Producto</label>
+        <div class="bg-red-500 md:w-2/3">
+          <input
+            type="text"
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            placeholder="Nombre del producto"
+          />
+
+          <span class="text-danger"> error message </span>
+        </div>
+      </div>
+
+      <!-- Campo de precio -->
+      <div class="mb-3 flex flex-col md:flex-row">
+        <label class="md:w-1/3">Precio</label>
+        <div class="md:w-2/3">
+          <input
+            type="number"
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            placeholder="Precio del producto"
+          />
+          <span class="text-danger"> El precio debe de ser 0 o mayor </span>
+        </div>
+      </div>
+
+      <!-- Campo de existencias -->
+      <div class="mb-3 flex flex-col md:flex-row">
+        <label class="md:w-1/3">Existencias</label>
+        <div class="md:w-2/3">
+          <input
+            type="number"
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            placeholder="Existencias del producto"
+          />
+
+          <span class="text-danger">
+            Las existencias deben de ser 0 o mayor
+          </span>
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="flex flex-col md:flex-row md:space-x-4">
+  <div class="flex flex-col md:w-1/2">
+    <span class="mt-4">Valid</span>
+    <pre class="mt-1">{{ "objeto" | json }}</pre>
+
+    <span class="mt-4">Pristine</span>
+    <pre class="mt-1">{{ "objeto" | json }}</pre>
+
+    <span class="mt-4">Touched</span>
+    <pre class="mt-1">{{ "objeto" | json }}</pre>
+
+    <span class="mt-4">Value</span>
+    <pre class="mt-1">{{ "objeto" | json }}</pre>
+
+    <span class="mt-4">Precio</span>
+    <pre class="mt-1">{{ "objeto" | json }}</pre>
+
+    <span class="mt-4">Producto</span>
+    <pre class="mt-1">{{ "objeto" | json }}</pre>
+  </div>
+</div>
